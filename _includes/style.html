@@ -1,0 +1,198 @@
+<style>
+
+/********** Reset css ************/
+
+* { margin: 0; padding: 0; border: none; outline:0; box-sizing: border-box; }
+body { font-size: 16px; color: #333; font-family: Arial, Helvetica, sans-serif; line-height: 25px; }
+a{ color: #770aa5; will-change: opacity; }
+a:hover{ opacity: .8; }
+
+/********** Grid Site ************/
+
+.header nav,
+main,
+.breadcrumb ol,
+.footer ul{
+    display: table;
+    margin: 0 auto;
+}
+
+@media (min-width: 320px) and (max-width: 991px) {
+    
+    .header nav,
+    main,
+    .breadcrumb ol,
+    .footer ul{
+        width: 90vw;
+    }
+
+}
+
+@media (min-width: 992px) {
+    
+    .header nav,
+    main,
+    .breadcrumb ol,
+    .footer ul{
+        width: 80vw;
+    }
+
+}
+
+/********** Header site ************/
+
+.header{
+    width: 100%;
+    float: left;
+    padding: 40px 0;
+    border-bottom: 1px solid #CCC;
+}
+
+.header > a{
+    float: left
+}
+
+.header ul li{
+    list-style: none;
+}
+
+@media (min-width: 320px) and (max-width: 991px) {
+
+    .header ul{
+        width: 90vw;
+        display: table;
+        margin: 30px auto 0 auto;
+        padding-left: 0;
+    }
+
+}
+
+@media (min-width: 992px) {
+
+    .header ul{
+        float: right;
+        margin: 0;
+        padding-left: 0;
+    }
+    
+}
+
+.header ul li{
+    float: left;
+    padding: 0 15px;
+}
+
+.header ul li:first-of-type{ padding-left: 0; }
+.header ul li:last-of-type{ padding-right: 0; }
+
+/********** Main site ************/
+
+body main{
+    padding: 40px 0;
+}
+
+/********** Footer site ************/
+
+.footer{
+    width: 100%;
+    float: left;
+    padding: 40px 0;
+    border-top: 1px solid #CCC;
+}
+
+.footer ul{
+    padding-left: 0;
+}
+
+.footer ul li{
+    list-style: none;
+}
+
+/********** Breadcrumb site ************/
+
+.breadcrumb{
+    width: 100%;
+    float: left;
+    padding: 15px 0;
+    background-color: #333;
+}
+
+.breadcrumb ol li{
+    float: left;
+    list-style: none;
+    padding: 0 30px 0 0;
+    color: #FFF;
+}
+
+.breadcrumb ol li:last-of-type{ padding-right: 0; }
+
+.breadcrumb ol li a{
+    color: #FFF;
+    text-decoration: underline; 
+}
+
+/********** Theme site ************/
+
+main h1,
+main h2,
+main h3,
+main h4{
+    width: 100%;
+    float: left;
+    color: #770aa5;
+}
+
+main h1{
+    font-size: 32px;
+    line-height: 40px;
+    margin: 0 0 30px 0;
+}
+
+main h2{
+    font-size: 28px;
+    line-height: 36px;
+    margin: 25px 0 15px 0;
+}
+
+main h3, main h4{
+    font-size: 20px;
+    line-height: 28px;
+    margin: 20px 0 10px 0;
+}
+
+main p{
+    width: 100%;
+    float: left;
+    margin: 0 0 10px 0; 
+}
+
+main ul{
+    width: 100%;
+    float: left;
+    margin: 0 0 10px 0;
+    padding-left: 15px;
+}
+
+main ul li{
+    width: 100%;
+    float: left;
+}
+
+main .list{
+    padding: 0;
+}
+
+main .list li{
+    list-style: none;
+    margin-bottom: 15px;
+}
+
+main .list h2{
+    margin-bottom: 5px;
+}
+
+main time{
+    font-style: italic
+}
+
+</style>

@@ -1,0 +1,14 @@
+{
+    "name": "Felipe Villani",
+    "short_name": "Villani",
+    "start_url": ".",
+    "display": "standalone",
+    "background_color": "#fff",
+    "description": "Portfólio online, blog e paletras sobre desenvolvimento front end",
+    "related_applications": [{
+      "platform": "web"
+    }, {
+      "platform": "play",
+      "url": ""
+    }]
+  }

@@ -1,0 +1,24 @@
+<nav class="breadcrumb">
+  <ol vocab="http://schema.org/" typeof="BreadcrumbList">
+    {% assign position = 0 %}
+    {% for crumbitem in breadcrumbs %}
+      {% assign position = position | plus: 1 %}
+
+      {% if forloop.last %}
+        <li property="itemListElement" typeof="ListItem"><span property="name">{{ crumbitem.title }}</span><meta property="position" content="{{ position }}" /></li>
+        {% continue %}
+      {% endif %}
+
+      <li property="itemListElement" typeof="ListItem">
+          <a property="item" typeof="WebPage" href="{{ crumbitem.url | prepend: site.baseurl }}"><span property="name">
+            {% if (crumbitem.url == '/') %}
+              Home
+            {% else %}
+              {{ crumbitem.title }}
+            {% endif %}
+            </span><meta property="position" content="{{ position }}" />
+          </a>
+      </li>
+    {% endfor %}
+  </ol>
+</nav>

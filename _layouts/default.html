@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="pt-br" Xmanifest="appcache.manifest">
+  
+  {% include head.html %}
+
+  {% include style.html %}
+
+  <body>
+
+    {% include header.html %}
+
+    {% if page.url != "/" %}
+      {% include nav-breadcrumbs.html %}
+    {% endif %}
+
+    <main>
+        {{ content }}
+    </main>
+
+    {% include footer.html %}
+
+  </body>
+
+</html>
